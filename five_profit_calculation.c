@@ -7,8 +7,12 @@ int main(void){
     scanf("%d", &selling_price);
     if(selling_price > cost_price){
         printf("Profit");
-    } else {
+    } 
+    if(cost_price > selling_price){
         printf("Loss");
+    }
+    if(cost_price == selling_price){
+        printf("No profit, No Loss");
     }
     return 0;
 }
